@@ -17,6 +17,9 @@ export const Navbar = () => {
                 <Link to='/pizzas'>
                     <p className='ts-medium'>Pizzas</p>
                 </Link>
+                <Link to='/drinks'>
+                    <p className='ts-medium'>Drinks</p>
+                </Link>
                 <p className='ts-medium'>Combos</p>
                 <p className='ts-medium'>Cart</p>
                 <p className='ts-medium'>SignIn</p>

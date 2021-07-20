@@ -1,14 +1,14 @@
 import React from 'react';
 import { Header } from '../layout/Header';
 
-export const Pizzas = ({ typePizza, listPizzas }) => {
+export const Drinks = ({ typeDrinks, listDrinks }) => {
     return (
         <div className='pizzas__maincontainer'>
           <Header 
-            headerTitle={typePizza}
-            headerImg='https://static.vecteezy.com/system/resources/previews/000/928/085/large_2x/pizza-cut-into-slices-photo.jpg'
+            headerTitle={typeDrinks}
+            headerImg='https://www.drinks-insight-network.com/wp-content/uploads/sites/23/2019/01/rawpixel-744365-unsplash1.jpg'
           />
-            {listPizzas.map((meal) => (
+            {listDrinks.map((meal) => (
             <div className='pizzas__container-small'>
                 <img 
                     src={meal.picture} 
@@ -17,7 +17,6 @@ export const Pizzas = ({ typePizza, listPizzas }) => {
                 />
                 <p className='pizzas__ts-big'>{meal.name}</p>
                 <p className='pizzas__ts-small'>{meal.description}</p>
-                {/* <p className='pizzas__ts-big'>{meal.price}</p> */}
                 <button className='butn butn-large'>Buy ${meal.price}</button>
             </div>
             ))}

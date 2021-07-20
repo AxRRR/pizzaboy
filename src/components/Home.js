@@ -24,7 +24,7 @@ const responseGoogle = ({ profileObj }) => {
                 />
             </div>
             <div className='home__container'>
-                <p className='ts__home-medium'>Sign Up with your Google Account</p>
+                <p className='ts__home-medium'>Welcome to PizzaBoy order your Pizza! <br /><br />Don't forget Sign Up with your Google Account</p>
                 <GoogleLogin
                     clientId="376676721491-30jufr1sfi4pd9a46mjs3ea741ncgid5.apps.googleusercontent.com"
                     buttonText="Sign In with Google"
