@@ -1,0 +1,37 @@
+.butn {
+    background-color: $secondary;
+    border-color: rgba(76, 19, 77, 0.3);
+    border-radius: 2px;
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(218, 0, 55);
+    height: 40px;
+    width: auto;
+}
+
+.butn-small {
+    height: 30px;
+    width: 25px;
+}
+
+.butn-medium {
+    height: 30px;
+    width: 50px;
+}
+
+.butn-large {
+    height: 40px;
+    width: 100%;
+}
+
+.butn-white {
+    background-color: white;
+    border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+    color: black;
+}
+
+.butn-down {
+    float: left;
+}

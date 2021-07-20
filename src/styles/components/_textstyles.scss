@@ -1,5 +1,5 @@
 .ts-small {
-    color: rgb(253, 184, 39);
+    color: rgb(0, 0, 0);
     font-size: 12px;
 }
 
@@ -22,8 +22,7 @@
 }
 
 .ts-big {
-    color: rgb(253, 184, 39);
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 24px;
     margin-right: 15px;
 }
@@ -34,4 +33,24 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     float: right;
+}
+
+
+.pizzas__ts-big {
+    color: rgb(136, 136, 136);
+    width: 210px;
+    height: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+}
+
+.pizzas__ts-small {
+    height: 100px;
+    width: 210px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(136, 136, 136);
+    font-size: 15px;
+    margin-left: 15px;
 }

@@ -44,3 +44,22 @@
     height: auto;
     width: 100%;
 }
+
+.pizzas__maincontainer {
+    display: flow-root;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%;
+}
+
+.pizzas__container-small {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px 1px rgba(141, 141, 141, 0.2);
+    border-radius: 4px;
+    height: 30rem;
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 15rem;
+}
