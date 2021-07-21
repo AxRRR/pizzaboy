@@ -6,9 +6,10 @@
 .ts-medium {
     color: rgb(23, 23, 23);
     font-size: 18px;
+    margin-top: 0px;
     padding: 5px;
     padding-top: 12px;
-    width: 150px;
+    width: 250px;
     height: 26px;
     float: left;
     cursor: pointer;
@@ -55,4 +56,30 @@
     margin-left: 15px;
     overflow: hidden;
     white-space: pre-line;
+}
+
+.ts-GoogleAccount {
+    color: rgb(23, 23, 23);
+    font-size: 18px;
+    margin-top: 0px;
+    padding: 5px;
+    padding-top: 12px;
+    width: 285px;
+    height: 26px;
+    float: left;
+    cursor: pointer;
+    text-align: left;
+}
+
+.ts-CartWish {
+    color: rgb(23, 23, 23);
+    font-size: 18px;
+    margin-top: 0px;
+    padding: 5px;
+    padding-top: 12px;
+    width: 70px;
+    height: 26px;
+    float: left;
+    cursor: pointer;
+    text-align: left;
 }

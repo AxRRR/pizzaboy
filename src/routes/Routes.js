@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import { Cart } from '../components/Cart';
 import { Drinks } from '../components/Drinks';
 import { Home } from '../components/Home';
+import { Login } from '../components/Login';
 import { Pizzas } from '../components/Pizzas';
 import { Container } from '../helpers/Container';
 import { Navbar } from '../layout/Navbar';
@@ -9,17 +11,28 @@ import { Drinks_Avaible } from '../resources/DrinksAvaible';
 import { PIZZAS_AVAIBLE } from '../resources/PizzasAvaible';
 
 export const Routes = () => {
+    const [showModalLogin, setShowModalLogin] = useState(false);
+    const showModalLoginHandler = () => {
+        setShowModalLogin(true);
+    };
+    
+    const hideModalLoginHandler = () => {
+        setShowModalLogin(false);
+    };
+
     return (
         <div>
+            <Cart />
+            {showModalLogin && <Login onCloseLoginScreen={hideModalLoginHandler} /> }
             <Switch>
                 <Route exact path='/home'>
-                    <Navbar />
+                    <Navbar onShowLoginScren={showModalLoginHandler} />
                     <Container>
                         <Home />
                     </Container>
                 </Route>
                 <Route exact path='/pizzas'>
-                    <Navbar />
+                    <Navbar onShowLoginScren={showModalLoginHandler} />
                     <Container>
                         <Pizzas 
                             typePizza='Pizzas Vegetarian'
@@ -32,7 +45,7 @@ export const Routes = () => {
                     </Container>
                 </Route>
                 <Route exact path='/drinks'>
-                    <Navbar />
+                    <Navbar onShowLoginScren={showModalLoginHandler} />
                     <Container>
                         <Drinks
                             typeDrinks='Drinks'

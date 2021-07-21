@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import { PizzaBoy } from './PizzaBoy';
+import { HomeIndex } from './IndexHome';
 
 import './styles/styles.scss'
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <PizzaBoy />
-    </BrowserRouter>
+        <HomeIndex />
   </React.StrictMode>,
   document.getElementById('root')
 );

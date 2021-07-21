@@ -14,7 +14,7 @@
 
 .pizzas__img-container { 
     border-radius: 4px;
-    height: 12rem;
+    height: 11rem;
     width: 15rem;
 }
 
@@ -55,4 +55,20 @@
     left: 50vh;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar__GoogleImg {
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+
+.cart__item-img {
+    border-radius: 5px;
+    height: 90%;
+    width: 100%;
+    float: left;
 }

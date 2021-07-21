@@ -1,7 +1,15 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { addItemCart } from '../actions/cart';
 import { Header } from '../layout/Header';
 
 export const Pizzas = ({ typePizza, listPizzas }) => {
+    const dispatch = useDispatch();
+    
+    const handleAddItemCartList = (GetDataList) => {
+        dispatch(addItemCart(GetDataList));
+    }
+
     return (
         <div className='pizzas__maincontainer'>
           <Header 
@@ -17,8 +25,16 @@ export const Pizzas = ({ typePizza, listPizzas }) => {
                 />
                 <p className='pizzas__ts-big'>{meal.name}</p>
                 <p className='pizzas__ts-small'>{meal.description}</p>
-                {/* <p className='pizzas__ts-big'>{meal.price}</p> */}
-                <button className='butn butn-large'>Buy ${meal.price}</button>
+                <button 
+                    className='butn butn-large'
+                    onClick={() => handleAddItemCartList({
+                        id: meal.id,
+                        picture: meal.picture,
+                        description: meal.description,
+                        name: meal.name,
+                        price: meal.price,
+                })}
+                >Buy ${meal.price}</button>
             </div>
             ))}
         </div>

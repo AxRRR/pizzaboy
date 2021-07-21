@@ -1,17 +1,18 @@
 import React from 'react';
 import GoogleLogin from 'react-google-login';
+import { useDispatch } from 'react-redux';
+import { loginWithGoogle } from '../actions/auth';
 
 export const Home = () => {
+const dispatch = useDispatch();
 
 const responseGoogle = ({ profileObj }) => {
-    // dispatch( loginWithGoogle(
-    //     profileObj.googleId, 
-    //     profileObj.name,
-    //     profileObj.email, 
-    //     profileObj.imageUrl
-    // ))
-    // props.onClose();
-    console.log(profileObj)
+    dispatch( loginWithGoogle(
+        profileObj.googleId, 
+        profileObj.name,
+        profileObj.email, 
+        profileObj.imageUrl
+    ))
 }
 
     return (
