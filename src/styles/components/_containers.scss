@@ -24,6 +24,19 @@
     margin-left: 283px;
 }
 
+@media (min-width: 1200px) {
+    .narbar__items-container {
+        margin-left: 0px;
+        width: 70%;
+        margin-left: 185px;
+    }
+}
+// @media (max-width: 480px) {
+//     .narbar__items-container {
+        
+//     }
+// }
+
 .home__container {
     width: 30%;
     padding: 95px;
@@ -37,12 +50,25 @@
     float: left;
 }
 
+
 .home__maincontainer {
     display: flow-root;
     margin-left: auto;
     margin-right: auto;
     height: auto;
     width: 100%;
+}
+
+@media (max-width: 480px) {
+    .home__maincontainer {
+        width: 100%;
+        // background-color: aqua;
+    }
+    .home__container {
+        width: 60%;
+        float: left;
+        // background-color: aquamarine;
+    }
 }
 
 .pizzas__maincontainer {
@@ -76,6 +102,12 @@
     flex-direction: column;
 }
 
+@media (max-width: 480px) {
+    .cart__container-main {
+        display: none;
+    }
+}
+
 .cart__container-items {
     overflow-y: scroll;
     height: 90%;
@@ -84,5 +116,29 @@
 
 .cart__container-items::-webkit-scrollbar {
     -webkit-appearance: none;
+}
+
+.cart__item-desc {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.cart__item-close {
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 0px;
+    background-color: darken($color: $primary, $amount: 5);
+    color: #ffffff;
+    text-align: center;
+    margin-top: 5px;
+    flex-shrink: 0;
+    margin-left: 25px;
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
 }
 

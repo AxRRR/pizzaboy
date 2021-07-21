@@ -22,7 +22,7 @@ export const Routes = () => {
 
     return (
         <div>
-            <Cart />
+            {/* <Cart /> */}
             {showModalLogin && <Login onCloseLoginScreen={hideModalLoginHandler} /> }
             <Switch>
                 <Route exact path='/home'>

@@ -17,7 +17,7 @@ export const Pizzas = ({ typePizza, listPizzas }) => {
             headerImg='https://static.vecteezy.com/system/resources/previews/000/928/085/large_2x/pizza-cut-into-slices-photo.jpg'
           />
             {listPizzas.map((meal) => (
-            <div className='pizzas__container-small'>
+            <div key={meal.id} className='pizzas__container-small'>
                 <img 
                     src={meal.picture} 
                     alt={meal.name}
@@ -40,3 +40,4 @@ export const Pizzas = ({ typePizza, listPizzas }) => {
         </div>
     );
 };
+

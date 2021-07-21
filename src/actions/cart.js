@@ -19,3 +19,5 @@ export const deleteRowCart = ( GetRowToDelete ) => ({
 export const cleanCartList = () => ({
     type: 'deleteall',
 })
+
+

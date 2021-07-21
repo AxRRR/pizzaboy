@@ -7,7 +7,6 @@ export const Navbar = props => {
 
     useEffect(() => {
     //   localStorage.setItem("userCredentials", JSON.stringify(state));
-    console.log(state)
     }, [state]);
     
     return (

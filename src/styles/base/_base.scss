@@ -13,6 +13,13 @@ html, body {
     height: auto;
 }
 
+@media (max-width: 480px) {
+    .main__container {
+        width: 100%;
+        background-color: rgb(197, 67, 67);
+    }
+}
+
 .navbar_logo {
     float: left;
     width: 130px;

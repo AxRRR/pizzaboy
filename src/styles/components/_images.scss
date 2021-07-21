@@ -12,6 +12,22 @@
     // }
 }
 
+@media (min-width: 1520px) {
+    .img-home {
+        width: 50%;
+        height: 70%;
+        float: left;
+    }
+}
+
+// @media (min-width: 480px) {
+//     .img-home {
+//         width: 10%;
+//         height: 70%;
+//         float: left;
+//     }
+// }
+
 .pizzas__img-container { 
     border-radius: 4px;
     height: 11rem;
@@ -42,7 +58,7 @@
 
 .pizzas__header-text {
     position: relative;
-    background-color: rgb(218, 0, 55);
+    background-color: rgba(218, 0, 55, 0.0);
     border-radius: 10px;
     color: white;
     padding: 12px;
@@ -67,7 +83,7 @@
 }
 
 .cart__item-img {
-    border-radius: 5px;
+    border-radius: 10px;
     height: 90%;
     width: 100%;
     float: left;
