@@ -13,6 +13,12 @@ html, body {
     height: auto;
 }
 
+@media (max-width: 1400px) {
+    .main__container {
+        width: 100%;
+    }
+}
+
 @media (max-width: 480px) {
     .main__container {
         width: 100%;

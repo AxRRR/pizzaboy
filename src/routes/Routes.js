@@ -22,7 +22,7 @@ export const Routes = () => {
 
     return (
         <div>
-            {/* <Cart /> */}
+            <Cart />
             {showModalLogin && <Login onCloseLoginScreen={hideModalLoginHandler} /> }
             <Switch>
                 <Route exact path='/home'>
@@ -35,12 +35,12 @@ export const Routes = () => {
                     <Navbar onShowLoginScren={showModalLoginHandler} />
                     <Container>
                         <Pizzas 
-                            typePizza='Pizzas Vegetarian'
-                            listPizzas={PIZZAS_AVAIBLE} 
-                        />
-                        <Pizzas 
                             typePizza='Pizzas Classics' 
                             listPizzas={PIZZAS_AVAIBLE}
+                        />
+                        <Pizzas 
+                            typePizza='Pizzas Vegetarian'
+                            listPizzas={PIZZAS_AVAIBLE} 
                         />
                     </Container>
                 </Route>

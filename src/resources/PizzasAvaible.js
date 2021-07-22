@@ -24,7 +24,7 @@ export const PIZZAS_AVAIBLE = [
     id: 'pizza4',
     name: 'Cuatro Quesos',
     description: 'La pizza pensada en los amantes del queso. Queso mozzarella, queso crema, queso cheddar, queso parmesano. Ingredientes: Queso Crema, Mozzarella, Parmesano y Cheddar',
-    picture: 'http://2.bp.blogspot.com/-w5f5-tTAiyU/U0q-NYkExLI/AAAAAAAAG30/4_o6CgTr_1Q/s1600/Pizza+4+quesos+(blog).jpg',
+    picture: 'https://unareceta.com/wp-content/uploads/2014/05/pizza-4-quesos.jpg',
     price: 149.99,
   },
   {

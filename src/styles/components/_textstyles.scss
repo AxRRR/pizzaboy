@@ -11,7 +11,6 @@
     padding-top: 12px;
     width: 250px;
     height: 26px;
-    float: left;
     cursor: pointer;
     border-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 0px 1px rgba(231, 231, 231, 1);
@@ -22,13 +21,27 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 950px) {
     .ts-medium {
-        width: 20px;
-        height: 10px;
-        font-size: 12px;
+        width: 12rem;
+        height: 26px;
     }
 }
+
+@media (max-width: 790px) {
+    .ts-medium {
+        width: 8.7rem;
+        height: 26px;
+    }
+}
+
+@media (max-width: 510px) {
+    .ts-medium {
+        width: 4rem;
+        height: 26px;
+    }
+}
+
 
 .ts-big {
     margin-top: 5px;
